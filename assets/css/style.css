@@ -5,7 +5,9 @@
 /*--------------------------------------*/
 
 :root {
-    --app-background-color: #fff;
+    --app-white: #fff;
+    --app-blue: #00549A;
+    --app-light-blue:#5490cd;
 }
 
 .container {
@@ -15,7 +17,7 @@
 
 body {
     font-family: "poppins", sans-serif;
-    background-color: var(--app-background-color);
+    background-color: var(--app-white);
     font-weight: 400;
     letter-spacing: 0.5px;
     color: #333333;
@@ -26,9 +28,89 @@ body {
     display: flex;
 }
 
+.flex-between {
+    justify-content: space-between;
+}
+
+
 /*--------------------------------------*/
 /*                Header                */
 /*--------------------------------------*/
+
+header{
+    height: 60px;
+    overflow: hidden;
+    background-color: var(--app-blue);
+    align-items: center;
+
+    
+    .logo {
+        font-size: 20px;
+        color: var(--app-white);
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        padding-top: 15px;
+    }
+
+    nav {
+        align-items: center;
+        display: inline-block;
+        padding: 17px 0px 0px 0px ;
+
+        .login {
+            font-size: 15px;
+            line-height: 15px;
+            text-decoration: none;
+            font-variant: tabular-nums;
+            color: var(--app-white);
+            border: 1px solid var(--app-white);
+            border-radius: 25px;
+            padding: 8px 12px 8px 12px;
+        }
+
+        .login:hover {
+            color: var(--app-blue);
+            background-color: var(--app-white);
+            transition: all 0.25s ease-in-out;
+        }
+        
+        .menu {
+            font-size: 25px;
+            line-height: 30px;
+            font-variant: tabular-nums;
+            color: var(--app-white);
+            padding: 0px 0px 0px 30px;
+        }
+
+        .menu:hover {
+            color: var(--app-light-blue);
+            transition: all 0.25s ease-in-out;
+        }
+
+        .icon {
+            font-size: 25px;
+            line-height: 30px;
+            font-variant: tabular-nums;
+            color: var(--app-white);
+            padding: 0px 15px 0px 0px;
+        }
+
+        .icon:hover {
+            color: var(--app-light-blue);
+            transition: all 0.25s ease-in-out;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
