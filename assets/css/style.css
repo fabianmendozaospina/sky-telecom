@@ -8,7 +8,7 @@
     --app-white: #fff;
     --app-blue: #00549A;
     --app-light-blue:#5490cd;
-    --app-background-color: #f0f8ff;
+    --app-background-color: #edf1f5;
     --app-line-border-color: #ddd;
     --app-gray: #f9f9f9;
 }
@@ -20,7 +20,7 @@
 
 body {
     font-family: "poppins", sans-serif;
-    background-color: var(--app-white);
+    background-color: var(--app-background-color);
     font-weight: 400;
     letter-spacing: 0.5px;
     color: #333333;
@@ -105,18 +105,6 @@ header{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------------------------------*/
 /*              Hero Banner             */
 /*--------------------------------------*/
@@ -130,7 +118,7 @@ header{
 .product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 2rem; 
+    gap: 4rem; 
     justify-content: center; 
     align-items: center; 
     align-content: center; 
@@ -140,7 +128,7 @@ header{
 .product {
     background-color: var(--app-gray);
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #f5f5f5;
     border-radius: 5px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -169,8 +157,20 @@ header{
     padding: 0.5rem 1rem;
     margin-top: 10px;
     margin-bottom: 10px;
+    opacity: 0.9;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
+.view-product:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+.price {
+    color: var(--app-blue);
+    font-size: 18px;
+    font-weight: 700;
+}
 
 /*--------------------------------------*/
 /*            Product Section           */
