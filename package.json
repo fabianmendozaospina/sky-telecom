@@ -1,0 +1,19 @@
+{
+  "name": "modules",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JAVASCRIPT"
+  ],
+  "author": "Douglas, Lateef, David, Fabian",
+  "license": "ISC",
+  "description": "Sky Telecom",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
