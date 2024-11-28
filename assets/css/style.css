@@ -41,7 +41,20 @@ body {
 /*--------------------------------------*/
 /*            Product Section           */
 /*--------------------------------------*/
+.detail-content {
+    flex-wrap: wrap;
+    width: 100%;
+}
 
+.detail-content .column{
+    flex: 0 0 auto;
+    width: calc(50% - 10px);
+    border: 1px solid green;
+}
+
+.product-image {
+    padding: 30px 0;
+}
 
 
 /*--------------------------------------*/
