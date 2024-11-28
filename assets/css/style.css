@@ -6,6 +6,7 @@
 
 :root {
     --app-background-color: #fff;
+    --app-items-border-color: #000;
 }
 
 .container {
@@ -26,6 +27,10 @@ body {
     display: flex;
 }
 
+.grid {
+    display: grid;
+}
+
 /*--------------------------------------*/
 /*                Header                */
 /*--------------------------------------*/
@@ -41,6 +46,11 @@ body {
 /*--------------------------------------*/
 /*            Product Section           */
 /*--------------------------------------*/
+
+section {
+    width: 100%;
+}
+
 .detail-content {
     flex-wrap: wrap;
     width: 100%;
@@ -48,15 +58,120 @@ body {
 
 .detail-content .column{
     flex: 0 0 auto;
-    width: calc(50% - 10px);
     border: 1px solid green;
+    padding: 20px;
+}
+
+.detail-content .column-1 {
+    width: calc(60% - 10px);
+}
+
+.detail-content .column-2 {
+    width: calc(40% - 10px);    
 }
 
 .product-image {
-    padding: 30px 0;
+
 }
 
+.product-details {
+    gap: 20px;
+}
+
+.product-name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.storage {
+    display: flex;
+    gap: 10px;
+
+    li {
+        padding: 5px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        cursor: default;
+    }
+}
+
+.storage::before {
+    content: 'Storage size:';
+    padding-top: 5px;
+}
+
+.color {
+    display: flex;
+    gap: 10px;
+
+    li {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        padding: 5px;
+        border: 1px solid ;
+    }
+}
+
+.color::before {
+    content: 'Available colors:';
+    padding-top: 5px;
+}
+
+.black {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.purple {
+    background-color: #800080;
+    border: 1px solid #800080;
+}
+
+.pink {
+    background-color: #ffc0cb;
+    border: 1px solid #ffc0cb;
+}
 
 /*--------------------------------------*/
 /*                Footer                */
 /*--------------------------------------*/
+
+
+
+
+
+
+
+/*--------------------------------------*/
+/*             Media Query              */
+/*--------------------------------------*/
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 780px) {
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .column {
+        padding: 5px;
+    }
+    .column-1 {
+        width: calc(100%);
+    }
+    .column-2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+}
