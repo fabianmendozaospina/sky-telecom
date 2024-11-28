@@ -8,6 +8,9 @@
     --app-white: #fff;
     --app-blue: #00549A;
     --app-light-blue:#5490cd;
+    --app-background-color: #f0f8ff;
+    --app-line-border-color: #ddd;
+    --app-gray: #f9f9f9;
 }
 
 .container {
@@ -118,6 +121,55 @@ header{
 /*              Hero Banner             */
 /*--------------------------------------*/
 
+
+
+/*--------------------------------------*/
+/*           Product Catalog            */
+/*--------------------------------------*/
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem; 
+    justify-content: center; 
+    align-items: center; 
+    align-content: center; 
+    height: 100vh; 
+}
+
+.product {
+    background-color: var(--app-gray);
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.product img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    margin: 0 auto 1rem;
+    margin-top: 10px;
+}
+
+.view-product {
+    background-color: var(--app-blue);
+    color: var(--app-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 
 /*--------------------------------------*/
