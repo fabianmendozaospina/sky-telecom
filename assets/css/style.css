@@ -216,7 +216,7 @@ header{
     cursor: pointer;
 }
 
-.login-btn {
+.login-btn, .product-details button {
     display: block;
     margin: 20px auto; 
     padding: 10px 20px; 
@@ -229,7 +229,7 @@ header{
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.login-btn:hover {
+.login-btn:hover, .product-details button:hover {
     background-color: var(--app-detail-button-hover-bg-color);
     transform: scale(1.05);
 }
@@ -382,25 +382,7 @@ section {
 
 .product-details {
     gap: 20px;
-
-    button {
-        margin-top: 20px;
-        width: 150px;
-        height: 40px;
-        border-radius: 25px;
-        background-color: var(--app-detail-button-bg-color);
-        border: 1px solid var(--app-detail-button-bg-color);
-        color: var(--app-detail-button-font-color);
-        font-size: 16px;
-        font-weight: 500;
-    }
-
-    button:hover {
-        background-color: var(--app-detail-button-hover-bg-color);
-        border: 1px solid var(--app-detail-button-hover-bg-color);
-    }
 }
-
 .strike-through {
     text-decoration: line-through;
 }
