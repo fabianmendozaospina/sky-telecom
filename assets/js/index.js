@@ -1,44 +1,34 @@
 'use strict';
 
-import { select, selectAll, listen } from "./utils.js";
+import { select, listen } from "./utils.js";
 
-const dropdownBtn = document.querySelector('.dropdown-btn');
-const dropdownContent = document.querySelector('.dropdown-content');
-const modal = document.getElementById('loginModal'); 
-const modalOpen = document.querySelector('.login'); 
-const modalClose = document.querySelector('.close'); 
+const dropdownBtn = select('.dropdown-btn');
+const dropdownContent = select('.dropdown-content');
+const modal = select('.modal'); 
+const modalOpen = select('.login'); 
+const modalClose = select('.close'); 
 
 dropdownBtn.addEventListener('click', function() {
     dropdownContent.classList.toggle('show');
 });
 
-window.onclick = function(event) {
-    if (!event.target.matches('.dropdown-btn')) {
-        const dropdowns = document.getElementsByClassName("dropdown-content");
-        for (let i = 0; i < dropdowns.length; i++) {
-            const openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
+listen('click', dropdownBtn, () => {
+    for (let i = 0; i < dropdownContent.length; i++) {
+        const openDropdown = dropdownContent[i];
+        
+        if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
         }
     }
-}
+});
 
-modalOpen.addEventListener('click', function (event) { 
+listen('click', modalOpen, (event) => { 
     event.preventDefault();
     modal.style.display = 'block'; 
     document.body.classList.add('modal-open');
 }); 
 
-modalClose.addEventListener('click', function () { 
+listen('click', modalClose, () => { 
     modal.style.display = 'none'; 
     document.body.classList.remove('modal-open');
-    
-}); 
-
-window.addEventListener('click', function (event) { 
-    if (event.target === modal) { 
-        modal.style.display = 'none'; 
-        document.body.classList.remove('modal-open'); 
-    }    
 });
