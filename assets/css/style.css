@@ -383,6 +383,7 @@ section.details {
     color: var(--app-detail-font-color);
     font-size: 12px;
     font-weight: 400;
+    gap: 10px;
 }
 
 .detail-content .column{
@@ -395,7 +396,7 @@ section.details {
 }
 
 .detail-content .column-2 {
-    width: calc(40% - 10px);    
+    width: calc(40% - 10px);
 }
 
 .product-details {
@@ -548,17 +549,13 @@ footer {
 
 @media screen and (max-width: 780px) {
 
-}
-
-@media screen and (max-width: 640px) {
-
     .column {
         padding: 5px;
     }
-    .column-1 {
-        width: calc(100%);
+    .detail-content .column-1 {
+        width: 100%;
     }
-    .column-2 {
+    .detail-content .column-2 {
         width: 100%;
     }
 }
