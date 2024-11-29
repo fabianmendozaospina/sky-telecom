@@ -1,10 +1,10 @@
 'use strict';
 
-import { select, listen } from "./utils.js";
+import { select, getElement, listen } from "./utils.js";
 
 const dropdownBtn = select('.dropdown-btn');
 const dropdownContent = select('.dropdown-content');
-const modal = select('.modal'); 
+const modal = getElement('loginModal'); 
 const modalOpen = select('.login'); 
 const modalClose = select('.close'); 
 
@@ -12,12 +12,14 @@ dropdownBtn.addEventListener('click', function() {
     dropdownContent.classList.toggle('show');
 });
 
-listen('click', dropdownBtn, () => {
-    for (let i = 0; i < dropdownContent.length; i++) {
-        const openDropdown = dropdownContent[i];
-        
-        if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
+listen('click', window, (event) => {
+    if (!event.target.matches('.dropdown-btn')) {
+        const dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+            const openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
         }
     }
 });
@@ -31,4 +33,12 @@ listen('click', modalOpen, (event) => {
 listen('click', modalClose, () => { 
     modal.style.display = 'none'; 
     document.body.classList.remove('modal-open');
+    
+}); 
+
+listen('click', window, (event) => { 
+    if (event.target === modal) { 
+        modal.style.display = 'none'; 
+        document.body.classList.remove('modal-open'); 
+    }    
 });
