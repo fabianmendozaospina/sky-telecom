@@ -11,18 +11,15 @@
     --app-background-color: #edf1f5;
     --app-line-border-color: #ddd;
     --app-gray: #f9f9f9;
-    --app-white: #fff;
-    --app-blue: #00549A;
-    --app-light-blue:#5490cd;
-    --app-background-color: #edf1f5;
-    --app-line-border-color: #ddd;
-    --app-gray: #f9f9f9;
     --app-items-border-color: #000;
     --app-detail-font-color: #555;
     --app-detail-primary-font-color: #00549A;
     --app-detail-button-hover-bg-color: #00549a;
     --app-detail-button-bg-color: #003778;
     --app-detail-button-font-color: #fff;
+    --app-footer-bg-color: #655f5f;
+    --app-footer-height: 70px;
+    --app-footer-socials-color: #001f3d;
 }
 
 .container {
@@ -49,6 +46,14 @@ body {
 
 .flex-between {
     justify-content: space-between;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*--------------------------------------*/
@@ -215,7 +220,7 @@ header{
     cursor: pointer;
 }
 
-.login-btn {
+.login-btn, .product-details button {
     display: block;
     margin: 20px auto; 
     padding: 10px 20px; 
@@ -228,7 +233,7 @@ header{
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.login-btn:hover {
+.login-btn:hover, .product-details button:hover {
     background-color: var(--app-detail-button-hover-bg-color);
     transform: scale(1.05);
 }
@@ -358,6 +363,20 @@ section {
     width: 100%;
 }
 
+section.notice {
+    background-color: #F0F8FF;
+
+    p {
+        padding: 30px;
+        font-size: 16px;
+        font-weight: 400px;
+    }
+}
+
+section.details {
+    background-color: var(--app-white);
+}
+
 .detail-content {
     flex-wrap: wrap;
     width: 100%;
@@ -381,25 +400,7 @@ section {
 
 .product-details {
     gap: 20px;
-
-    button {
-        margin-top: 20px;
-        width: 150px;
-        height: 40px;
-        border-radius: 25px;
-        background-color: var(--app-detail-button-bg-color);
-        border: 1px solid var(--app-detail-button-bg-color);
-        color: var(--app-detail-button-font-color);
-        font-size: 16px;
-        font-weight: 500;
-    }
-
-    button:hover {
-        background-color: var(--app-detail-button-hover-bg-color);
-        border: 1px solid var(--app-detail-button-hover-bg-color);
-    }
 }
-
 .strike-through {
     text-decoration: line-through;
 }
@@ -513,7 +514,30 @@ section {
 /*--------------------------------------*/
 /*                Footer                */
 /*--------------------------------------*/
+footer {
+    background-color: var(--app-footer-bg-color);
+    height: var(--app-footer-height);
+    font-size: 16px;
+    color: #222;
 
+    ul {
+        display: flex;
+
+        li {
+            line-height: var(--app-footer-height);
+            padding: 0 15px;
+        }
+    }
+
+    p {
+        line-height: var(--app-footer-height);
+    }
+}
+
+.fa-brands {
+    color: var(--app-footer-socials-color);
+    font-size: 20px;
+}
 
 /*--------------------------------------*/
 /*             Media Query              */

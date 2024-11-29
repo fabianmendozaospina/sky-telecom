@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <!-- Meta Tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Douglas, Lateef, David, Fabian">
-        <meta name="description" content="Shape Factory">
-        <meta name="keywords" content="HTML, CSS, JS, Web Development">
+        <meta name="description" content="Sky Telecom">
+        <meta name="keywords" content="HTML, CSS, JS, Web Development, json, git, GitHub">
 
-        <title>Product detail</title>
+        <title>Sky Telecom</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -36,6 +35,25 @@
                     </nav>
                     <div class="dropdown">
                         <button class="dropdown-btn"><i class="fa-solid fa-bars"></i></button>
+                            <li>
+                                <a class="icon" href="#">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon" href="#">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="login" href="#">Log in / Register</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
                         <div class="dropdown-content">
                             <a href="#">Link 1</a>
                             <a href="#">Link 2</a>
@@ -68,66 +86,156 @@
                             <img src="./assets/img/S24-ultra.jpg">
                         </div>
                     </div>
-                    <div class="column column-2">
-                        <div class="product-details grid">
-                            <h3 class="product-name">Samsung Galaxy S24</h3>
-                            <p class="description">
-                                Samsung Galaxy S24 features Wi-Fi 6E, the 
-                                latest and fastest technology. Get <strong>Sky
-                                </strong> pure fibre Internet, which also 
-                                features Wi-Fi 6E, and connect your new phone 
-                                to the fastest Wi-Fi technology at home.
-                            </p>
-                            <ul class="storage">
-                                <li>128GB</li>
-                                <li>256GB</li>
-                                <li>512GB</li>
-                            </ul>
-                            <ul class="color">
-                                <li class="black"></li>
-                                <li class="pink"></li>
-                                <li class="purple"></li>
-                            </ul> 
-                            <p>
-                                From <span class="strike-through">$56.67</span>
-                            </p>
-                            <div class="deal flex">
-                                <div class="deal-item value">
-                                    <p class="primary">$10.00/mo.</p>
-                                    <p class="secondary">for 24 months</p>
-                                </div>
-                                <div class="deal-item down">
-                                    <p class="primary">$0.00</p>
-                                    <p class="secondary">down</p>
-                                </div>
-                                <div class="deal-item apr">
-                                    <p class="primary">$0.00</p>
-                                    <p class="secondary">APR</p>
-                                </div>
+                </div>
+                <div id="loginModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Log In</h2>
+                        <form id="loginForm">
+                            <label for="username">Username</label>
+                            <input 
+                                type="text" 
+                                id="username" 
+                                name="username" 
+                                placeholder="Enter your username" 
+                                required
+                            >
+                            <label for="password">Password</label>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                placeholder="Enter your password" 
+                                required
+                            >
+                            <button type="submit" class="login-btn">
+                                Log In
+                            </button>
+                            <a href="#" class="create-account">
+                                Create an account
+                            </a>
+                            <a href="#" class="forgot-password">
+                                Forgot Username or Password?
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="notice">
+                <div class="container flex flex-center">
+                    <p>
+                        <strong>
+                            Order online and we'll waive the $70 Connection 
+                            Service Fee. Plus, get fast and free shiiping.
+                        </strong>
+                    </p>
+                </div>
+            </section>
+            <section class="details">
+                <div class="container">
+                    <div class="detail-content flex">
+                        <div class="column column-1">
+                            <div class="product-image">
+                                <img src="./assets/img/SG-S24-ultra.avif">
                             </div>
-                            <div class="extra">
-                                <p class="primary">
-                                    now save $880.00*
+                        </div>
+                        <div class="column column-2">
+                            <div class="product-details grid">
+                                <h3 class="product-name">Samsung Galaxy S24</h3>
+                                <p class="description">
+                                    Samsung Galaxy S24 features Wi-Fi 6E, the 
+                                    latest and fastest technology. Get <strong>Sky
+                                    </strong> pure fibre Internet, which also 
+                                    features Wi-Fi 6E, and connect your new phone 
+                                    to the fastest Wi-Fi technology at home.
                                 </p>
-                                <p class="secondary">
-                                    *Over 24 months on SmartPay vs device full
-                                    price
-                                </p>
-                            </div>
-                            <div class="term">
-                                <p class="terms">
-                                    Taxes extra. Requires an eligible 2-year plan 
-                                    with Device Return Option
-                                </p>
+                                <ul class="storage">
+                                    <li>128GB</li>
+                                    <li>256GB</li>
+                                    <li>512GB</li>
+                                </ul>
+                                <ul class="color">
+                                    <li class="black"></li>
+                                    <li class="pink"></li>
+                                    <li class="purple"></li>
+                                </ul> 
                                 <p>
-                                    Our device full price is $1,360.00
-                                </p>    
+                                    From <span class="strike-through">$56.67</span>
+                                </p>
+                                <div class="deal flex">
+                                    <div class="deal-item value">
+                                        <p class="primary">$10.00/mo.</p>
+                                        <p class="secondary">for 24 months</p>
+                                    </div>
+                                    <div class="deal-item down">
+                                        <p class="primary">$0.00</p>
+                                        <p class="secondary">down</p>
+                                    </div>
+                                    <div class="deal-item apr">
+                                        <p class="primary">$0.00</p>
+                                        <p class="secondary">APR</p>
+                                    </div>
+                                </div>
+                                <div class="extra">
+                                    <p class="primary">
+                                        now save $880.00*
+                                    </p>
+                                    <p class="secondary">
+                                        *Over 24 months on SmartPay vs device full
+                                        price
+                                    </p>
+                                </div>
+                                <div class="term">
+                                    <p class="terms">
+                                        Taxes extra. Requires an eligible 2-year plan 
+                                        with Device Return Option
+                                    </p>
+                                    <p>
+                                        Our device full price is $1,360.00
+                                    </p>    
+                                </div>
+                                <button>Add to cart</button>
                             </div>
-                            <button>Add to card</button>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
+        <footer>
+            <section class="container flex flex-between">
+                <div class="socials">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>&copy; Sky Telecoms, 2024. All rights reserved.</p>
+            </section>
+        </footer>     
     </body>
 </html>
