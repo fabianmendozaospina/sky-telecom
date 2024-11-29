@@ -33,7 +33,6 @@ listen('click', modalOpen, (event) => {
 listen('click', modalClose, () => { 
     modal.style.display = 'none'; 
     document.body.classList.remove('modal-open');
-    
 }); 
 
 listen('click', window, (event) => { 

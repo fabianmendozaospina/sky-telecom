@@ -1,3 +1,5 @@
+'use strict';
+
 export function select(selector, scope = document) {
     return scope.querySelector(selector);
 }
