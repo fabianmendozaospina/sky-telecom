@@ -1,5 +1,7 @@
 'use strict';
 
+import { select, selectAll, listen } from "./utils.js";
+
 // Get the dropdown button
 const dropdownBtn = document.querySelector('.dropdown-btn');
 // Get the dropdown content
