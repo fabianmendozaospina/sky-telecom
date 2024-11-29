@@ -18,7 +18,8 @@
     --app-detail-button-bg-color: #003778;
     --app-detail-button-font-color: #fff;
     --app-footer-bg-color: #655f5f;
-    --app-footer-height: 60px;
+    --app-footer-height: 70px;
+    --app-footer-socials-color: #001f3d;
 }
 
 .container {
@@ -45,6 +46,10 @@ body {
 
 .flex-between {
     justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*--------------------------------------*/
@@ -512,15 +517,26 @@ section {
 footer {
     background-color: var(--app-footer-bg-color);
     height: var(--app-footer-height);
+    font-size: 16px;
+    color: #222;
 
     ul {
         display: flex;
-        gap: 10px;
 
         li {
             line-height: var(--app-footer-height);
+            padding: 0 15px;
         }
     }
+
+    p {
+        line-height: var(--app-footer-height);
+    }
+}
+
+.fa-brands {
+    color: var(--app-footer-socials-color);
+    font-size: 20px;
 }
 
 /*--------------------------------------*/
