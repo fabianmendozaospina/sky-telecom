@@ -2,18 +2,17 @@
 
 import { select, selectAll, listen } from "./utils.js";
 
-// Get the dropdown button
-const dropdownBtn = document.querySelector('.dropdown-btn');
-// Get the dropdown content
-const dropdownContent = document.querySelector('.dropdown-content');
 
-// Add a click event to the dropdown button
+const dropdownBtn = document.querySelector('.dropdown-btn');
+const dropdownContent = document.querySelector('.dropdown-content');
+const modal = document.getElementById('loginModal'); 
+const modalOpen = document.querySelector('.login'); 
+const modalClose = document.querySelector('.close'); 
+
 dropdownBtn.addEventListener('click', function() {
-    // Toggle the class that shows or hides the dropdown content
     dropdownContent.classList.toggle('show');
 });
 
-// Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
     if (!event.target.matches('.dropdown-btn')) {
         const dropdowns = document.getElementsByClassName("dropdown-content");
@@ -25,3 +24,22 @@ window.onclick = function(event) {
         }
     }
 }
+
+modalOpen.addEventListener('click', function (event) { 
+    event.preventDefault();
+    modal.style.display = 'block'; 
+    document.body.classList.add('modal-open');
+}); 
+
+modalClose.addEventListener('click', function () { 
+    modal.style.display = 'none'; 
+    document.body.classList.remove('modal-open');
+    
+}); 
+
+window.addEventListener('click', function (event) { 
+    if (event.target === modal) { 
+        modal.style.display = 'none'; 
+        document.body.classList.remove('modal-open'); 
+    }    
+});

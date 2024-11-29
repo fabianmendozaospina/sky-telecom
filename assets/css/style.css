@@ -51,7 +51,6 @@ body {
     justify-content: space-between;
 }
 
-
 /*--------------------------------------*/
 /*                Header                */
 /*--------------------------------------*/
@@ -111,6 +110,9 @@ header{
         }
     }
 
+    /*--------------------------------------*/
+    /*           Dropdown menu              */
+    /*--------------------------------------*/
     .dropdown {
         position: relative;
         z-index: 1;
@@ -133,7 +135,7 @@ header{
     }
 
     .dropdown-btn i {
-        pointer-events: none; /* Faz com que o clique no ícone seja tratado como clique no botão */
+        pointer-events: none; 
     }
 
     .dropdown-content {
@@ -163,6 +165,118 @@ header{
         display: block;
     }
 }
+
+/*--------------------------------------*/
+/*                Modal                 */
+/*--------------------------------------*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.modal-content {
+    background-color: var(--app-white);
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: var(--app-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-btn {
+    display: block;
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    background-color: var(--app-detail-button-bg-color);
+    color: var(--app-detail-button-font-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.login-btn:hover {
+    background-color: var(--app-detail-button-hover-bg-color);
+    transform: scale(1.05);
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+    border: 1px solid var(--app-line-border-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--app-detail-primary-font-color);
+}
+
+.create-account {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--app-detail-primary-font-color);
+    text-align: center;
+    text-decoration: none;
+}
+
+.create-account:hover {
+    color: var(--app-light-blue);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
+    text-align: center;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    color: var(--app-detail-primary-font-color);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
 
 /*--------------------------------------*/
 /*              Hero Banner             */
@@ -376,11 +490,6 @@ section {
 /*--------------------------------------*/
 /*                Footer                */
 /*--------------------------------------*/
-
-
-
-
-
 
 
 /*--------------------------------------*/
