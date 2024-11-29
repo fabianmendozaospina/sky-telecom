@@ -526,10 +526,10 @@ section.details {
 /*                Footer                */
 /*--------------------------------------*/
 footer {
-    background-color: var(--app-footer-bg-color);
+    background-color: var(--app-footer-socials-color);
     height: var(--app-footer-height);
     font-size: 16px;
-    color: #222;
+    color: var(--app-gray);
 
     ul {
         display: flex;
@@ -546,7 +546,7 @@ footer {
 }
 
 .fa-brands {
-    color: var(--app-footer-socials-color);
+    color: var(--app-gray);
     font-size: 20px;
 }
 
