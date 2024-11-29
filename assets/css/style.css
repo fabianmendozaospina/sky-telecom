@@ -41,24 +41,28 @@ body {
 /*--------------------------------------*/
 
 header{
+    position: relative;
     height: 60px;
-    overflow: hidden;
+    overflow: visible;
     background-color: var(--app-blue);
     align-items: center;
+    z-index: 1;
 
-    
     .logo {
-        font-size: 20px;
+        font-size: 40px;
+        line-height: 40px;
+        font-family: "Permanent Marker", cursive;
+        font-weight: 400;
+        font-style: normal;
         color: var(--app-white);
-        font-weight: 500;
-        letter-spacing: 1.5px;
-        padding-top: 15px;
+        letter-spacing: 2px;
+        padding-top: 9px;
     }
 
     nav {
         align-items: center;
         display: inline-block;
-        padding: 17px 0px 0px 0px ;
+        margin-right: 20px;
 
         .login {
             font-size: 15px;
@@ -68,7 +72,7 @@ header{
             color: var(--app-white);
             border: 1px solid var(--app-white);
             border-radius: 25px;
-            padding: 8px 12px 8px 12px;
+            padding: 8px 12px;
         }
 
         .login:hover {
@@ -77,25 +81,12 @@ header{
             transition: all 0.25s ease-in-out;
         }
         
-        .menu {
-            font-size: 25px;
-            line-height: 30px;
-            font-variant: tabular-nums;
-            color: var(--app-white);
-            padding: 0px 0px 0px 30px;
-        }
-
-        .menu:hover {
-            color: var(--app-light-blue);
-            transition: all 0.25s ease-in-out;
-        }
-
         .icon {
             font-size: 25px;
             line-height: 30px;
             font-variant: tabular-nums;
             color: var(--app-white);
-            padding: 0px 15px 0px 0px;
+            padding: 0px 30px 0px 0px;
         }
 
         .icon:hover {
@@ -103,23 +94,64 @@ header{
             transition: all 0.25s ease-in-out;
         }
     }
+
+    .dropdown {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+    }
+
+    .dropdown-btn {
+        background-color: var(--app-blue);
+        color: var(--app-white);
+        font-size: 25px;
+        border: none;
+        width: 40px;
+        height: 60px;
+        cursor: pointer;
+        padding: 0px;
+    }
+    
+    .dropdown-btn:hover{
+        color: var(--app-light-blue);
+    }
+
+    .dropdown-btn i {
+        pointer-events: none; /* Faz com que o clique no ícone seja tratado como clique no botão */
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--app-line-border-color);
+        min-width: 160px;
+        z-index: 2;
+        border-radius: 5px;
+        left: -120px;
+    }
+
+    .dropdown-content a {
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;   
+    }
+
+    .dropdown-content a:hover {
+        color: var(--app-light-blue);
+    }
+    
+    .show {
+        display: block;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*--------------------------------------*/
 /*              Hero Banner             */
 /*--------------------------------------*/
+
 
 
 
