@@ -5,12 +5,19 @@
 /*--------------------------------------*/
 
 :root {
+    
     --app-background-color: #fff;
+    --app-hero-banner-background-light-blue-to-dark-blue: linear-gradient(to right,	#00FFFF, darkblue );
+   --app-dark-blue:	#00FFFF;
+
 }
 
 .container {
     width: min(100% - 32px, 960px);
     margin-inline: auto;
+}
+.float-right{
+    float: left;
 }
 
 body {
@@ -36,8 +43,30 @@ body {
 /*              Hero Banner             */
 /*--------------------------------------*/
 
-
-
+.hero-banner{
+    background:var(--app-hero-banner-background-light-blue-to-dark-blue) ;
+    height: 170px;
+    .image{
+        top:20px;
+        width: 280px;
+        float: right;
+    }
+}
+.large-text{
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+}
+.sale-button{
+margin-top: 2px;
+padding:10px 15px;
+border-radius: 4px;
+background-color:var(--app-dark-blue) ;
+transition: 0.2s ease-in-out;
+}
+.sale-button:hover{
+transform: scale(1.1);
+}
 /*--------------------------------------*/
 /*            Product Section           */
 /*--------------------------------------*/
