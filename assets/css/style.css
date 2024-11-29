@@ -7,6 +7,11 @@
 :root {
     --app-background-color: #fff;
     --app-items-border-color: #000;
+    --app-detail-font-color: #555;
+    --app-detail-primary-font-color: #00549A;
+    --app-detail-button-hover-bg-color: #00549a;
+    --app-detail-button-bg-color: #003778;
+    --app-detail-button-font-color: #fff;
 }
 
 .container {
@@ -54,11 +59,13 @@ section {
 .detail-content {
     flex-wrap: wrap;
     width: 100%;
+    color: var(--app-detail-font-color);
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .detail-content .column{
     flex: 0 0 auto;
-    border: 1px solid green;
     padding: 20px;
 }
 
@@ -76,6 +83,27 @@ section {
 
 .product-details {
     gap: 20px;
+
+    button {
+        margin-top: 20px;
+        width: 150px;
+        height: 40px;
+        border-radius: 25px;
+        background-color: var(--app-detail-button-bg-color);
+        border: 1px solid var(--app-detail-button-bg-color);
+        color: var(--app-detail-button-font-color);
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    button:hover {
+        background-color: var(--app-detail-button-hover-bg-color);
+        border: 1px solid var(--app-detail-button-hover-bg-color);
+    }
+}
+
+.strike-through {
+    text-decoration: line-through;
 }
 
 .product-name {
@@ -84,8 +112,29 @@ section {
 }
 
 .description {
-    font-size: 14px;
-    font-weight: 400;
+}
+
+.deal {
+    gap: 30px;
+
+    p.primary {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--app-detail-primary-font-color);
+    }
+}
+
+.extra {
+    border-radius: 10px;
+    border: 1px solid var(--app-detail-primary-font-color);
+    padding: 8px;
+
+    p.primary {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--app-detail-primary-font-color);
+        text-transform: uppercase;
+    }
 }
 
 .storage {
@@ -94,7 +143,8 @@ section {
 
     li {
         padding: 5px;
-        border: 1px solid #000;
+        border: 1px solid #f4f5f7;
+        background-color: #f4f5f7;
         border-radius: 4px;
         cursor: default;
     }
@@ -110,8 +160,9 @@ section {
     gap: 10px;
 
     li {
-        width: 30px;
-        height: 30px;
+        margin-top: 5px;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
         padding: 5px;
         border: 1px solid ;
