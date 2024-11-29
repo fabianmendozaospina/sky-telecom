@@ -8,6 +8,7 @@
     --app-white: #fff;
     --app-blue: #00549A;
     --app-light-blue:#5490cd;
+    --app-dark-blue: #00FFFF;
     --app-background-color: #edf1f5;
     --app-line-border-color: #ddd;
     --app-gray: #f9f9f9;
@@ -20,6 +21,7 @@
     --app-footer-bg-color: #655f5f;
     --app-footer-height: 70px;
     --app-footer-socials-color: #001f3d;
+    --app-hero-banner-degraded: linear-gradient(to right,	#baf8f8, darkblue );
 }
 
 .container {
@@ -62,7 +64,6 @@ a {
 
 header{
     position: relative;
-    height: 60px;
     overflow: visible;
     background-color: var(--app-blue);
     align-items: center;
@@ -118,6 +119,7 @@ header{
     /*--------------------------------------*/
     /*           Dropdown menu              */
     /*--------------------------------------*/
+
     .dropdown {
         position: relative;
         z-index: 1;
@@ -291,8 +293,53 @@ label {
 /*              Hero Banner             */
 /*--------------------------------------*/
 
+.hero-banner{
+    display: flex; 
+    background:var(--app-hero-banner-degraded);
+    height: 220px;
 
+    .col {
+        width: 100%;
+        height: 220px;
 
+        .advert {
+            width: 600px;
+            height: 100%;
+        }
+
+        .image {
+            width: calc(100% - 600px);
+            height: 100%;
+            justify-content: flex-end;
+            margin-top: 18px;
+        }
+    }
+}
+
+.large-text{
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.sale-button {
+    display: block;
+    margin-top: 20px; 
+    margin-left: 0px;
+    padding: 10px 20px; 
+    font-size: 16px;
+    background-color: var(--app-detail-button-bg-color);
+    color: var(--app-detail-button-font-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.sale-button:hover, .product-details button:hover {
+    background-color: var(--app-detail-button-hover-bg-color);
+    transform: scale(1.05);
+}
 
 /*--------------------------------------*/
 /*           Product Catalog            */
@@ -305,7 +352,7 @@ label {
     justify-content: center; 
     align-items: center; 
     align-content: center; 
-    height: 100vh; 
+    padding: 30px 30px;
 }
 
 .product {
@@ -521,6 +568,7 @@ section.details {
 /*--------------------------------------*/
 /*                Footer                */
 /*--------------------------------------*/
+
 footer {
     background-color: var(--app-footer-bg-color);
     height: var(--app-footer-height);
