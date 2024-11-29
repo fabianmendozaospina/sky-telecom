@@ -9,3 +9,7 @@ export function selectAll(selector, scope = document) {
 export function listen(event, selector, callback) {
     return selector.addEventListener(event, callback);
 }
+
+export function getElement(selector, scope = document) {
+    return scope.getElementById(selector);
+}
