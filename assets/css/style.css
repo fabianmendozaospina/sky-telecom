@@ -191,6 +191,10 @@ header{
     width: 80%;
     max-width: 400px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+
+    h2 {
+        margin-bottom: 25px;
+    }    
 }
 
 .modal-open {
@@ -375,10 +379,6 @@ section {
     width: calc(40% - 10px);    
 }
 
-.product-image {
-
-}
-
 .product-details {
     gap: 20px;
 
@@ -407,9 +407,6 @@ section {
 .product-name {
     font-size: 24px;
     font-weight: 700;
-}
-
-.description {
 }
 
 .deal {
@@ -485,6 +482,32 @@ section {
 .pink {
     background-color: #ffc0cb;
     border: 1px solid #ffc0cb;
+}
+
+/*--------------------------------------*/
+/*              Contact Us              */
+/*--------------------------------------*/
+
+.contact-us {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--app-white);
+    border-top-width: 1px;
+    border-top-color: var(--app-gray);
+
+    h2 {
+        margin-bottom: 25px;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        display: block;
+        border: 1px solid var(--app-line-border-color);
+        border-radius: 5px;
+        box-sizing: border-box;        
+    }
 }
 
 /*--------------------------------------*/

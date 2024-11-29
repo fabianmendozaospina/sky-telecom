@@ -2,7 +2,6 @@
 
 import { select, selectAll, listen } from "./utils.js";
 
-
 const dropdownBtn = document.querySelector('.dropdown-btn');
 const dropdownContent = document.querySelector('.dropdown-content');
 const modal = document.getElementById('loginModal'); 
