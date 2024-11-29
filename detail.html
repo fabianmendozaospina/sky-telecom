@@ -19,6 +19,45 @@
         <script src="./assets/js/index.js" type="module"></script>
     </head>
     <body>
+        <header>
+            <div class="container flex flex-between">
+                <div>
+                    <p class="logo">SKY</p>
+                </div>
+                <div class="flex">
+                    <nav class="flex">
+                        <ul class="flex">
+                            <li><a class="icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><a class="icon" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            <li><a class="login" href="#">Log in / Register</a></li>
+                        </ul>
+                    </nav>
+                    <div class="dropdown">
+                        <button class="dropdown-btn"><i class="fa-solid fa-bars"></i></button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="loginModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Log In</h2>
+                        <form id="loginForm">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                            <button type="submit" class="login-btn">Log In</button>
+                            <a href="#" class="create-account">Create an account</a>
+                            <a href="#" class="forgot-password">Forgot Username or Password?</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
         <main>
             <section class="container">
                 <div class="detail-content flex">
