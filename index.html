@@ -26,13 +26,25 @@
                 <div class="flex">
                     <nav class="flex">
                         <ul class="flex">
-                            <li><a class="icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                            <li><a class="icon" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                            <li><a class="login" href="#">Log in / Register</a></li>
+                            <li>
+                                <a class="icon" href="#">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon" href="#">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="login" href="#">Log in / Register</a>
+                            </li>
                         </ul>
                     </nav>
                     <div class="dropdown">
-                        <button class="dropdown-btn"><i class="fa-solid fa-bars"></i></button>
+                        <button class="dropdown-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
                         <div class="dropdown-content">
                             <a href="#">Link 1</a>
                             <a href="#">Link 2</a>
@@ -46,12 +58,30 @@
                         <h2>Log In</h2>
                         <form id="loginForm">
                             <label for="username">Username</label>
-                            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                            <input 
+                                type="text" 
+                                id="username" 
+                                name="username" 
+                                placeholder="Enter your username" 
+                                required
+                            >
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                            <button type="submit" class="login-btn">Log In</button>
-                            <a href="#" class="create-account">Create an account</a>
-                            <a href="#" class="forgot-password">Forgot Username or Password?</a>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                placeholder="Enter your password" 
+                                required
+                            >
+                            <button type="submit" class="login-btn">
+                                Log In
+                            </button>
+                            <a href="#" class="create-account">
+                                Create an account
+                            </a>
+                            <a href="#" class="forgot-password">
+                                Forgot Username or Password?
+                            </a>
                         </form>
                     </div>
                 </div>                
@@ -59,25 +89,25 @@
         </header>
         <main>
             <section class="container product-grid">
-                <div class="product" data-id="1" data-name="Samsung Galaxy A03" data-price="130">
-                    <img src="./assets/img/1.png" alt="Samsung Galaxy A03">
-                    <h3>Samsung Galaxy A03</h3>
-                    <p class="price">$130</p>
-                    <button class="view-product">View Product</button>
-                </div>        
-        
                 <div class="product" data-id="2" data-name="Samsung Galaxy S24" data-price="450">
                     <img src="./assets/img/2.png" alt="Samsung Galaxy S24">
                     <h3>Samsung Galaxy S24</h3>
                     <p class="price">$450</p>
-                    <button class="view-product">View Product</button>
+                    <a class="view-product" href="./detail.html">View Product</a>
                 </div>
-        
+
+                <div class="product" data-id="1" data-name="Samsung Galaxy A03" data-price="130">
+                    <img src="./assets/img/1.png" alt="Samsung Galaxy A03">
+                    <h3>Samsung Galaxy A03</h3>
+                    <p class="price">$130</p>
+                    <a class="view-product" href="#">View Product</a>
+                </div>        
+                
                 <div class="product" data-id="3" data-name="iPhone 13" data-price="340">
                     <img src="./assets/img/3.png" alt="iPhone 13">
                     <h3>iPhone 13</h3>
                     <p class="price">$340</p>
-                    <button class="view-product">View Product</button>
+                    <a class="view-product" href="#">View Product</a>
                 </div>
             </section>
             
