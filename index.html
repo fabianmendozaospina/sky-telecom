@@ -16,7 +16,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Dokdo&family=Knewave&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
         <link rel="stylesheet" href="./assets/css/style.css" media="all">
-        <link rel="stylesheet" href="./assets/css/responsive.css" media="all">
         <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
         <script src="./assets/js/index.js" type="module"></script>
     </head>
@@ -60,27 +59,44 @@
                 </div>
             </div>
         </header>
-        <main class="container product-grid">
-            <div class="product" data-id="1" data-name="Samsung Galaxy A03" data-price="130">
-                <img src="./assets/img/1.png" alt="Samsung Galaxy A03">
-                <h3>Samsung Galaxy A03</h3>
-                <p class="price">$130</p>
-                <button class="view-product">View Product</button>
-            </div>        
-    
-            <div class="product" data-id="2" data-name="Samsung Galaxy S24" data-price="450">
-                <img src="./assets/img/2.png" alt="Samsung Galaxy S24">
-                <h3>Samsung Galaxy S24</h3>
-                <p class="price">$450</p>
-                <button class="view-product">View Product</button>
-            </div>
-    
-            <div class="product" data-id="3" data-name="iPhone 13" data-price="340">
-                <img src="./assets/img/3.png" alt="iPhone 13">
-                <h3>iPhone 13</h3>
-                <p class="price">$340</p>
-                <button class="view-product">View Product</button>
-            </div>        
+        <main>
+            <section class="container product-grid">
+                <div class="product" data-id="1" data-name="Samsung Galaxy A03" data-price="130">
+                    <img src="./assets/img/1.png" alt="Samsung Galaxy A03">
+                    <h3>Samsung Galaxy A03</h3>
+                    <p class="price">$130</p>
+                    <button class="view-product">View Product</button>
+                </div>        
+        
+                <div class="product" data-id="2" data-name="Samsung Galaxy S24" data-price="450">
+                    <img src="./assets/img/2.png" alt="Samsung Galaxy S24">
+                    <h3>Samsung Galaxy S24</h3>
+                    <p class="price">$450</p>
+                    <button class="view-product">View Product</button>
+                </div>
+        
+                <div class="product" data-id="3" data-name="iPhone 13" data-price="340">
+                    <img src="./assets/img/3.png" alt="iPhone 13">
+                    <h3>iPhone 13</h3>
+                    <p class="price">$340</p>
+                    <button class="view-product">View Product</button>
+                </div>
+            </section>
+            
+            <section class="contact-us">
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Enter your email" required>
+                        <label for="message">Message</label>
+                        <textarea rows="6" id="message" name="message" placeholder="Enter your Message" required></textarea>
+                        <button type="submit" class="login-btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
         </main>      
     </body>
 </htm>
