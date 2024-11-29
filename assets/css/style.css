@@ -11,18 +11,14 @@
     --app-background-color: #edf1f5;
     --app-line-border-color: #ddd;
     --app-gray: #f9f9f9;
-    --app-white: #fff;
-    --app-blue: #00549A;
-    --app-light-blue:#5490cd;
-    --app-background-color: #edf1f5;
-    --app-line-border-color: #ddd;
-    --app-gray: #f9f9f9;
     --app-items-border-color: #000;
     --app-detail-font-color: #555;
     --app-detail-primary-font-color: #00549A;
     --app-detail-button-hover-bg-color: #00549a;
     --app-detail-button-bg-color: #003778;
     --app-detail-button-font-color: #fff;
+    --app-footer-bg-color: #655f5f;
+    --app-footer-height: 60px;
 }
 
 .container {
@@ -513,7 +509,19 @@ section {
 /*--------------------------------------*/
 /*                Footer                */
 /*--------------------------------------*/
+footer {
+    background-color: var(--app-footer-bg-color);
+    height: var(--app-footer-height);
 
+    ul {
+        display: flex;
+        gap: 10px;
+
+        li {
+            line-height: var(--app-footer-height);
+        }
+    }
+}
 
 /*--------------------------------------*/
 /*             Media Query              */
