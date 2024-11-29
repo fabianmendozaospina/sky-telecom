@@ -48,6 +48,10 @@ body {
     justify-content: space-between;
 }
 
+.flex-center {
+    justify-content: center;
+}
+
 a {
     text-decoration: none;
 }
@@ -357,6 +361,20 @@ label {
 
 section {
     width: 100%;
+}
+
+section.notice {
+    background-color: #F0F8FF;
+
+    p {
+        padding: 30px;
+        font-size: 16px;
+        font-weight: 400px;
+    }
+}
+
+section.details {
+    background-color: var(--app-white);
 }
 
 .detail-content {
