@@ -20,8 +20,8 @@
     <body>
         <header>
             <div class="container flex flex-between">
-                <div>
-                    <p class="logo">SKY</p>
+                <div class="sky-logo">
+                    <a class="logo" href="#">SKY</a>
                 </div>
                 <div class="flex">
                     <nav class="flex">
@@ -34,9 +34,11 @@
                     <div class="dropdown">
                         <button class="dropdown-btn"><i class="fa-solid fa-bars"></i></button>
                         <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#product">Products</a>
+                            <a href="#contact">Contact</a>
+                            <a href="#">Smart Home</a>
+                            <a href="#">Internet</a>
+                            <a href="#">Support</a>
                         </div>
                     </div>
                 </div>
@@ -58,7 +60,7 @@
             </div>
         </header>
         <main>
-            <section class="container product-grid">
+            <section id="product" class="container product-grid">
                 <div class="product" data-id="1" data-name="Samsung Galaxy A03" data-price="130">
                     <img src="./assets/img/1.png" alt="Samsung Galaxy A03">
                     <h3>Samsung Galaxy A03</h3>
@@ -81,7 +83,7 @@
                 </div>
             </section>
             
-            <section class="contact-us">
+            <section id="contact" class="contact-us">
                 <div class="container">
                     <h2>Contact Us</h2>
                     <form>
