@@ -1,0 +1,23 @@
+/*--------------------------------------*/
+/*             Media Query              */
+/*--------------------------------------*/
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 780px) {
+
+    .column {
+        padding: 5px;
+    }
+    .detail-content .column-1 {
+        width: 100%;
+    }
+    .detail-content .column-2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+}
