@@ -48,29 +48,3 @@
         }
     }
 }
-
-@media screen and (min-width: 922px) {
-    div .dropdown {
-        display: none;
-    }
-
-    div .menu {
-        display: flex;
-        gap: 20px; 
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 921px) {
-    div .menu { 
-        display: none;
-    }
-
-    div .dropdown { 
-        display: inline-block;
-    }
-
-    nav {
-        margin-right: 20px;
-    }
-}
