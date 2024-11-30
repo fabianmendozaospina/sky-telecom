@@ -2,14 +2,19 @@
 
 This project was developed for Program Developer students, focusing on tools like Git and GitHub while working remotely. This web application was designed for a fictional company 'SKY Telecom', and includes features such as a product catalog, user authentication, dropdown menus, modal dialogs, and responsive design. Below are the details of the project's structure and functionality.
 
-![](./assets/img/readme1.png)
+![](./assets/img/readme-img-1.png)
 
 ## 📑Table of Contents
+- [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Features](#features)
-- [Technologies Used](#technologies-used)
+
+## 🖥️Technologies Used
+![HTML5](https://img.shields.io/badge/HTML-00A6E4?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS-0073E6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-005D99?style=for-the-badge&logo=javascript&logoColor=white)
 
 ## 🖱️Installation
 To run this project locally, follow these steps:
@@ -38,7 +43,7 @@ The project is organized as follows:
 - `main.js`: Main JavaScript file responsible for initializing and managing 
 core application interactions, leveraging utility functions from `utils.js`.
 
-![](./assets/img/readme2.png)
+![](./assets/img/readme-img-2.png)
 
 ## 💡Features
 ### Header
@@ -65,10 +70,5 @@ core application interactions, leveraging utility functions from `utils.js`.
 ### Footer
 - Social media links.
 - Company information.
-
-## 🖥️Technologies Used
-![HTML5](https://img.shields.io/badge/HTML-00A6E4?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS-0073E6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-005D99?style=for-the-badge&logo=javascript&logoColor=white)
 
 &copy; Created by MITT Software Students.
