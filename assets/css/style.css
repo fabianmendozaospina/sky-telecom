@@ -325,7 +325,14 @@ label {
     }
 }
 
-.large-text{
+.hero-banner .image img {
+    width: 100%;
+    min-width: 406px;
+    max-width: 206px;
+    height: auto;
+}
+
+.large-text {
     font-size: 60px;
     font-weight: 600;
     margin-top: 5px;

@@ -1,3 +1,58 @@
 /*--------------------------------------*/
 /*             Media Query              */
 /*--------------------------------------*/
+@media screen and (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    
+    .hero-banner {
+        height: 250px;
+    }
+
+    .large-text {
+        font-size: 33px;
+    }    
+
+    .hero-banner{
+        .col {
+            .advert {
+                width: 300px;
+            }
+    
+            .image {
+                width: calc(100% - 400px);
+            }
+        }
+    }      
+}
+
+@media screen and (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-banner {
+        height: 280px;
+    }
+
+    .large-text {
+        font-size: 30px;
+    }
+
+    .hero-banner{
+        .col {
+            .advert {
+                width: 115px;
+
+                h3 {
+                    font-size: 14px;
+                }
+            }
+    
+            .image {
+                width: calc(100% - 115px);
+            }
+        }
+    }
+}
