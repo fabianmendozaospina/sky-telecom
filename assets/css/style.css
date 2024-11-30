@@ -195,32 +195,6 @@ header{
     }
 }
 
-@media screen and (min-width: 922px) {
-    div .dropdown { /* Esconde o dropdown em telas maiores */
-        display: none;
-    }
-
-    div .menu { /* Mostra as opções do menu diretamente na header */
-        display: flex;
-        gap: 20px; /* Ajuste o espaçamento entre os itens */
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 921px) {
-    div .menu { /* Esconde as opções do menu diretamente na header */
-        display: none;
-    }
-
-    div .dropdown { /* Mostra o dropdown em telas menores */
-        display: inline-block;
-    }
-
-    nav {
-        margin-right: 20px;
-    }
-}
-
 /*--------------------------------------*/
 /*                Modal                 */
 /*--------------------------------------*/
@@ -336,6 +310,31 @@ label {
     transition: color 0.3s ease;
 }
 
+@media screen and (min-width: 922px) {
+    div .dropdown { 
+        display: none;
+    }
+
+    div .menu { 
+        display: flex;
+        gap: 20px; 
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 921px) {
+    div .menu {
+        display: none;
+    }
+
+    div .dropdown { 
+        display: inline-block;
+    }
+
+    nav {
+        margin-right: 20px;
+    }
+}
 
 /*--------------------------------------*/
 /*              Hero Banner             */
@@ -459,12 +458,13 @@ section {
 }
 
 section.notice {
-    background-color: var(--app-detail-button-font-color);
+    background: linear-gradient(to right,	#1f2df7, #000046 );
 
     p {
         padding: 30px;
         font-size: 16px;
         font-weight: 400px;
+        color: var(--app-detail-button-font-color);
     }
 }
 
