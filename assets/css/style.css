@@ -75,12 +75,12 @@ header{
     z-index: 1;
 
     .sky-logo {
-        padding-top: 10px;
+        height: 60px;
     }
 
     .logo {
         font-size: 40px;
-        line-height: 40px;
+        line-height: 55px;
         font-family: "Permanent Marker", cursive;
         font-weight: 400;
         font-style: normal;
@@ -89,13 +89,26 @@ header{
         cursor: pointer;
     }
 
+    .menu a{
+        font-size: 17px;
+        font-weight: 500;
+        font-variant: tabular-nums;
+        color: var(--app-white);
+        cursor: pointer;
+    }
+
+    .menu a:hover {
+        color: var(--app-light-blue);
+        transition: all 0.25s ease-in-out;
+    }
+
     nav {
         align-items: center;
         display: inline-block;
-        margin-right: 20px;
-
+        
         .login {
             font-size: 15px;
+            font-weight: 500;
             line-height: 15px;
             text-decoration: none;
             font-variant: tabular-nums;
@@ -327,8 +340,8 @@ label {
 
 .hero-banner .image img {
     width: 100%;
-    min-width: 406px;
-    max-width: 206px;
+    min-width: 370px;
+    max-width: 370px;
     height: auto;
 }
 

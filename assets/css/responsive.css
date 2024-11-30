@@ -6,34 +6,26 @@
         grid-template-columns: repeat(2, 1fr);
     } 
     
-    .hero-banner {
-        height: 250px;
-    }
-
     .large-text {
-        font-size: 33px;
+        font-size: 40px;
     }    
 
     .hero-banner{
         .col {
             .advert {
-                width: 300px;
+                width: 400px;
             }
     
             .image {
                 width: calc(100% - 400px);
             }
         }
-    }      
+    }     
 }
 
 @media screen and (max-width: 768px) {
     .product-grid {
         grid-template-columns: 1fr;
-    }
-
-    .hero-banner {
-        height: 280px;
     }
 
     .large-text {
@@ -43,7 +35,7 @@
     .hero-banner{
         .col {
             .advert {
-                width: 115px;
+                width: 200px;
 
                 h3 {
                     font-size: 14px;
@@ -51,8 +43,34 @@
             }
     
             .image {
-                width: calc(100% - 115px);
+                width: calc(100% - 200px);
             }
         }
+    }
+}
+
+@media screen and (min-width: 922px) {
+    div .dropdown {
+        display: none;
+    }
+
+    div .menu {
+        display: flex;
+        gap: 20px; 
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 921px) {
+    div .menu { 
+        display: none;
+    }
+
+    div .dropdown { 
+        display: inline-block;
+    }
+
+    nav {
+        margin-right: 20px;
     }
 }
