@@ -16,7 +16,7 @@ const subject = getElement('subject');
 const message = getElement('message');
 const output = select('.output');
 
-dropdownBtn.addEventListener('click', function() {
+listen('click', dropdownBtn, () => {
     dropdownContent.classList.toggle('show');
 });
 
